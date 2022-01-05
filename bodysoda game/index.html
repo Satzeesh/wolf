@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    
+    <title>Bodysoda - The game</title>
+   
+  </head>
+  <body>
+  
+
+   <div class="navbar">
+      <img id="body-soda" src="/images/bodysoda.jfif" />
+      <div class="container">
+        <a href="#" class ="title">Body<span>Soda</span></a>
+      </div>
+    </div>
+    
+     <br>
+     <br>
+     <br>
+     <br>
+    
+    <section class="intro">
+      <div class="container">
+        <div class="left-col">
+          <p class="bodysoda">Drunken-Monkey style</p>
+          <h1 class = "quest">Guess the vadivelu character</h1>
+          <img class="guess" id="guess-id" src="/images/guess.jpg" />
+          <br><br>
+          <h3 class="score"> Score :</h3>
+          <h3 class="hscore"> High-Score :</h3>
+          <h1 class="won" > Hurray you have won 🎉🎉🎉</h1>
+         
+
+        </div>
+      
+        <div class ="life" >
+          <input class = "chances" type="text" id="B1" value="B" disabled="false"/>
+          <input class = "chances" type="text" id="O1" value="O" disabled="false"/>
+          <input class = "chances" type="text" id="D1" value="D" disabled="false"/>
+          <input class = "chances" type="text" id="Y1" value="Y" disabled="false"/>
+          <input class = "chances" type="text" id="S1" value="S" disabled="false"/>
+          <input class = "chances" type="text" id="O2" value="O" disabled="false"/>
+          <input class = "chances" type="text" id="D2" value="D" disabled="false"/>
+          <input class = "chances" type="text" id="A1" value="A" disabled="false"/>
+          <br><br>
+        </div>
+      </section>
+        <div>
+          <nav>
+            <ul class="secondary-nav">
+              <a class="hint" href="#" onclick=hint1() >Hint </a></li>
+
+              <a class="skip" href="#" >Skip </a></li>
+            </ul>
+          </nav>
+        </div>
+      
+        <div class="answer-box">
+          
+          <input class="ans"type="text" id="1"  value=""  readonly/>
+          <input class="ans"type="text" id="2"  value=""  readonly/>
+          <input class="ans"type="text" id="3"  value=""  readonly/>
+          <input class="ans"type="text" id="4"  value=""  readonly/>
+          <input class="ans"type="text" id="5"  value=""  readonly/>
+          <input class="ans"type="text" id="6"  value=""  readonly/>
+          <input class="ans"type="text" id="7"  value=""  readonly/>
+          <input class="ans"type="text" id="8"  value=""  readonly/>
+          <input class="ans"type="text" id="9"  value=""  readonly/>
+          <input class="ans"type="text" id="10" value=""  readonly/>
+          <input class="ans"type="text" id="11" value=""  readonly/>
+          <input class="ans"type="text" id="12" value=""  readonly/>
+          <input class="ans"type="text" id="13" value=""  readonly/>
+          <input class="ans"type="text" id="14" value=""  readonly/>
+          <input class="ans"type="text" id="15" value=""  readonly/>
+          <input class="ans"type="text" id="16" value=""  readonly/>
+          <input class="ans"type="text" id="17" value=""  readonly/>
+          <input class="ans"type="text" id="18" value=""  readonly/>
+          <input class="ans"type="text" id="19" value=""  readonly/>
+          <input class="ans"type="text" id="20" value=""  readonly/>
+          <br><br>
+          </div>
+      </div>
+    
+<section class="ans-sec">
+  <div class ="ans-div">
+    <input type="button" class="keypad" id="A" value="A" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="B" value="B" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="C" value="C" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="D" value="D" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="E" value="E" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="F" value="F" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="G" value="G" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="H" value="H" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="I" value="I" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="J" value="J" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="K" value="K" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="L" value="L" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="M" value="M" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="N" value="N" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="O" value="O" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="P" value="P" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="Q" value="Q" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="R" value="R" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="S" value="S" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="T" value="T" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="U" value="U" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="V" value="V" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="W" value="W" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="X" value="X" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="Y" value="Y" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="Z" value="Z" onclick="keypressed(this.id)" />
+    <input type="button" class="keypad" id="-" value="-" onclick="keypressed(this.id)" />
+    <br><br
+  </div>
+<div class="submitform">
+  <input type="submit" id="submit-box" value="Next" onclick="next()" />
+  <input type="submit" id="reset-box" value="Reset" onclick="reset()" />
+
+</div>
+</section>
+  
+  </body>
+  <script src=bodysoda.js></script>
+</html>
